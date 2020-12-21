@@ -4,11 +4,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Thanks for your interest in becoming a member of iFit's front end team! As part of the application process, we ask that you complete the following challenge.
 
-### What do I do?
+## What do I do?
 
 This repo includes a very basic initialization of the `create-react-app` framework, along with the challenge instructions.
 
-Your task is to build out a single page section based on the provided designs (included below under Required Assets). Your work will be judged based on how well it matches the designs, how well you've implemented at least basic responsive functionality, and your code's cleanliness and structure. It's okay to adjust any part of the initial project setup to fit your needs and desired workflow. Bonus points for showing off your animation chops!
+Your task is to build out a single page section based on the provided designs (included below under Required Assets). Your work will be judged based on how well it matches the designs, how well you've implemented at least basic responsive functionality, and your code's cleanliness and structure.
+
+In addition, we ask that you show off your state management skills by adding select functionality for each of the cards. When clicked, they should reflect the active state pictured in the designs (top left card, with increased box-shadow).
+
+ It's okay to adjust any part of the initial project setup to fit your needs and desired workflow. Bonus points for showing off your animation chops!
 
 ## How do I submit?
 
@@ -16,7 +20,7 @@ Here's the ideal workflow:
 - Fork this repository
 - Make it look amazing
 - Push your version up to a public repository
-- Submit the link in your HackerRank test
+- Submit the link in your communications with our hiring department
 - (Optional): host your code at a live URL and share that link, as well
 
 ## How long do I have?
