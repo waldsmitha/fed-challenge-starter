@@ -17,7 +17,7 @@ function App() {
   return (
     <StyledSection variants={fadeIn} initial="hide" animate="show">
       {cardData.map((card) => (
-        <Route path="/">
+        <Route path="/" key={card.title.split(" ")[0]}>
           <Card data={card} />
         </Route>
       ))}
