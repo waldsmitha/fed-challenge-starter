@@ -39,6 +39,7 @@ const Card = (data) => {
             style={{
               fontSize: "1.8rem",
               textDecoration: "none",
+              padding: "0 .5rem",
             }}
           >
             VIEW DETAILS

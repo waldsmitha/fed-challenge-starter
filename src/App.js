@@ -15,13 +15,13 @@ function App() {
   const [cardData, setCardData] = useState(data);
 
   return (
-    <Route path="/">
-      <StyledSection variants={fadeIn} initial="hide" animate="show">
-        {cardData.map((card) => (
+    <StyledSection variants={fadeIn} initial="hide" animate="show">
+      {cardData.map((card) => (
+        <Route path="/">
           <Card data={card} />
-        ))}
-      </StyledSection>
-    </Route>
+        </Route>
+      ))}
+    </StyledSection>
   );
 }
 
