@@ -1,44 +1,39 @@
 import React, { useState } from "react";
-
-import "./App.css";
-
+//Router
+import { Route } from "react-router-dom";
 //Components
-import SeriesCard from "./components/SeriesCard";
-import VideoCard from "./components/VideoCard";
-
+import Card from "./components/Card";
 //Styling
+import "./App.css";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-
+import { fadeIn } from "./animations";
 //Data
 import data from "./data";
 
 function App() {
-  const [active, setActive] = useState("false");
   const [cardData, setCardData] = useState(data);
-  console.log(cardData);
 
   return (
-    <StyledSection>
-      <VideoCard data={cardData} />
-      <SeriesCard data={cardData} />
-      <VideoCard data={cardData} />
-      <SeriesCard data={cardData} />
-      <VideoCard data={cardData} />
-      <SeriesCard data={cardData} />
-      <VideoCard data={cardData} />
-      <SeriesCard data={cardData} />
-    </StyledSection>
+    <Route path="/">
+      <StyledSection variants={fadeIn} initial="hide" animate="show">
+        {cardData.map((card) => (
+          <Card data={card} />
+        ))}
+      </StyledSection>
+    </Route>
   );
 }
 
 const StyledSection = styled(motion.div)`
   display: grid;
-  min-height: 100vh;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   max-width: 1500px;
+  margin: auto;
+  height: 100%;
+  padding: 5rem;
 `;
 
 export default App;
