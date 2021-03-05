@@ -34,6 +34,12 @@ const StyledSection = styled(motion.div)`
   margin: auto;
   height: 100%;
   padding: 5rem;
+  @media (max-width: 720px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
 `;
 
 export default App;
